@@ -139,17 +139,12 @@
 
       function updateOutput(){
 
-        $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+        document.getElementsByTagName('iframe')[0].contentWindow.document.getElementsByTagName('html')[0].innerHTML = "<html><head><style type='text/css'>" + document.getElementById("cssPanel").value + "</style></head><body>" + document.getElementById("htmlPanel").value + "</body></html>";
 
-        document.getElementById("outputPanel").contentWindow.eval($("#jsPanel").val());
-
-
+        document.getElementById("outputPanel").contentWindow.eval(document.getElementById("jsPanel").value);
 
       }
 
-      let iframe = document.getElementsByTagName("iframe")
-
-      console.log(iframe);
 
       let numActive = 2
 
