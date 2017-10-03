@@ -1,0 +1,344 @@
+body{
+  padding:0px;
+  margin:0px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#topbar{
+  height:50px;
+  width:1300px;
+  margin:0 auto;
+}
+
+#logo{
+  margin-top:8px;
+  margin-right:8px;
+  width:100px;
+  float:left;
+}
+
+.topbar-section{
+
+  float:left;
+  border-left: 1px #CCCCCC solid;
+  height: 100%;
+
+}
+
+#signin-logo{
+  margin: 5px 15px;
+  float:left;
+}
+
+#signin-text{
+  font-weight: bold;
+  position:relative;
+  top:14px;
+  padding-right:40px;
+}
+
+#wiggle{
+  float:left;
+  height:50px;
+}
+
+#bell{
+  float:left;
+  height:25px;
+  margin:9px 12px 9px 8px;
+}
+
+#bell-div{
+  float:left;
+}
+
+#arrow{
+  width:25px;
+  margin-left:20px;
+}
+
+.topbar-menu{
+  font-weight: bold;
+  padding:13px 15px 0 15px;
+  height:37px;
+}
+
+#searchbar{
+  background-color:#E4E4E4;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding:5px;
+  margin:12px 0 7px 7px;
+  float:left;
+}
+
+#magglass{
+  height:25px;
+  margin:12px 0px;
+}
+
+#red-bar-container{
+  border-top: 1px #CCCCCC solid;
+  height:65px;
+  width: auto;
+  background-color:#BB1919;
+  margin:auto;
+}
+
+#red-bar{
+  width: 1300px;
+  margin:0px auto;
+}
+
+#news{
+  font-size:50px;
+  color:white;
+  position:relative;
+  top:3px;
+  float:left;
+}
+
+#local-news{
+  border:1px #BB4545 solid;
+  float:right;
+  width:216px;
+  padding:0px 1px 0px 11px;
+  margin-top:9px;
+  margin-right:85px;
+}
+
+#local-news a {
+  color:white;
+  text-decoration: none;
+  font-size:25px;
+  float:left;
+  position:relative;
+  top:12px;
+}
+
+#local-news a:hover {
+  text-decoration: underline;
+}
+
+#local-news img {
+    height:40px;
+    padding-left:5px;
+}
+
+.clear{
+  clear:both;
+}
+
+#red-bar-2-container{
+  width:100%;
+  background-color:#A91717;
+  height:50px;
+}
+
+#red-bar-2{
+  width:1300px;
+  margin:0px auto;
+}
+
+.red-bar-2-menu{
+
+}
+
+.red-bar-2-menu a{
+  color:white;
+  font-weight:bold;
+  font-size: 18px;
+  text-decoration: none;
+  padding:0px 10px;
+  border-right: 1px solid #BB4545;
+  position:relative;
+  top:13px;
+}
+
+.red-bar-2-menu a:hover{
+  text-decoration: underline;
+}
+
+.no-border{
+  border:none !important;
+}
+
+#redmore{
+  position:relative;
+  top:15px;
+}
+
+#content-container{
+  width:1300px;
+  margin:10px auto;
+}
+
+#Technology{
+  width:151px;
+  font-size: 30px;
+  border-bottom: 3px #a91717 solid;
+}
+
+#home-red-bar-2{
+  padding-left:0 !important;
+}
+
+#articles-container{
+  margin-top:10px;
+  float:left;
+}
+
+#articles-container a{
+  text-decoration:none;
+  color:inherit;
+}
+
+
+#main-article-title{
+  font-size:40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  float:left;
+}
+
+#main-blurb-container{
+  width:900px;
+  float:left;
+  border-bottom: 1px #CCCCCC solid;
+  padding-bottom: 10px;
+}
+
+#main-blurb{
+  color:grey;
+  width:330px;
+  float:left;
+  margin:0px;
+  padding:0px;
+}
+
+#main-info{
+  float:left;
+  color:#5a5a5a;
+  font-size:18px;
+  width:400px;
+}
+
+#main-article-picture{
+  float:right;
+  width:500px;
+}
+
+#clock{
+  padding:5px;
+  position:relative;
+  top:12px;
+}
+
+#redtech{
+  color:#BB4545;
+  font-size:20px;
+  font-weight: bold;
+  border-left: 1px #CCCCCC solid;
+  padding-left: 8px;
+  margin-left:8px;
+}
+
+#main-links-mini-red-div{
+  border-bottom: 2px #a91717 solid;
+  width:60px;
+  float:left;
+  margin-top:10px;
+}
+
+#main-links{
+  float:left;
+  width:400px;
+  font-size:90%;
+  position: relative;
+  top:10px;
+}
+
+.main-link-divs{
+  margin:10px 0;
+}
+
+#watch-listen-container{
+  float:left;
+  border-left:1px #CCCCCC solid;
+  margin: 0 0 0 10px;
+  height:500px;
+  width:360px;
+}
+
+.watch-listen-main-images{
+  width:100px;
+  height:60px;
+  z-index: 2;
+  float:left;
+}
+
+.watch-listen-small-images{
+  zindex:1;
+  position:relative;
+  left:-100px;
+  top:40px;
+  height:20px;
+  float:left;
+}
+
+.watch-listen-content{
+  margin-left:15px;
+  margin-top:15px;
+}
+
+#watch-listen-title{
+  margin-left:15px;
+  font-size:22px;
+}
+
+.watch-listen-time{
+  background-color: #000000;
+  color:#FFFFFF;
+  font-size:10px;
+  float:left;
+  position:relative;
+  left:-100px;
+  top:40px;
+  padding:4px;
+}
+
+.watch-listen-text{
+  font-size:14px;
+  font-weight:bold;
+  float:left;
+  width:230px;
+  position:relative;
+  top:-33px;
+  left:10px;
+}
+
+.watch-listen-text a:hover{
+  color:blue !important;
+}
+
+.watch-listen-info img {
+  padding: 0px 5px;
+  position:relative;
+  top:7px;
+}
+
+.watch-listen-info {
+  color:#545454;
+  position:relative;
+  top:-7px;
+}
+
+.watch-listen-red{
+  color:red;
+  font-size:14px;
+  margin:0;
+  padding:0;
+  position:relative;
+  top:-13px;
+}

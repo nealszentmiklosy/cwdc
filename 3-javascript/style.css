@@ -1,0 +1,11 @@
+body {
+
+  font-family:sans-serif;
+
+}
+
+  #shape{
+    display:none;
+    position:relative;
+    background-color:#AE8D7E;
+  }
