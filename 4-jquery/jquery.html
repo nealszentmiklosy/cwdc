@@ -152,6 +152,8 @@
         let panels = document.getElementsByClassName("panel");
         for( let i=0 ; i<panels.length ; i++ ) {
           panels[i].style.width = window.innerWidth / numActive - 9;
+          //this returns an empty value, why doesn't the header have a height value?  i have it set in css before
+          console.log(document.getElementById("header").style.height);
           panels[i].style.height = window.innerHeight - document.getElementById("header").style.height - 47;
         }
       }
@@ -209,11 +211,24 @@
 
       updateOutput();
 
-      $("textarea").on('change keyup paste', function () {
+/*      $("textarea").on('change keyup paste', function () {
 
         updateOutput();
 
-      });
+      });*/
+
+      let inputs = document.getElementsByTagName("textarea");
+      for( let i=0 ; i<inputs.length ; i++ ) {
+        inputs[i].addEventListener( "keyup", function( event) {
+          updateOutput();
+        }, false);
+        inputs[i].addEventListener( "change", function( event) {
+          updateOutput();
+        }, false);
+        inputs[i].addEventListener( "paste", function( event) {
+          updateOutput();
+        }, false);
+      };
 
 
     </script>
