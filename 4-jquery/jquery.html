@@ -146,9 +146,7 @@
         let panels = document.getElementsByClassName("panel");
         for( let i=0 ; i<panels.length ; i++ ) {
           panels[i].style.width = window.innerWidth / numActive - 9;
-          //this returns an empty value, why doesn't the header have a height value?  i have it set in css before
-          console.log(document.getElementById("header").style.height);
-          panels[i].style.height = window.innerHeight - document.getElementById("header").style.height - 47;
+          panels[i].style.height = window.innerHeight - document.getElementById("header").clientHeight;
         }
       }
 
