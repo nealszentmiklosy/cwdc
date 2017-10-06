@@ -12,6 +12,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style type="text/css">
 
     nav{
@@ -21,10 +23,39 @@
     .jumbotron{
       background-image: url("jumbopic.jpg");
       text-align: center;
+      margin-top:50px;
     }
 
     #email{
       width:350px;
+    }
+
+    #appSummary{
+      text-align: center;
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+
+    .card-img-top {
+
+      width:100%;
+
+    }
+
+    #appStoreIcon{
+      width:200px;
+    }
+
+    #footer{
+      text-align: center;
+      background-color: aqua;
+      margin-top:150px;
+      padding-top:150px;
+      padding-bottom:150px;
+    }
+
+    body{
+      position: relative;
     }
 
 
@@ -34,7 +65,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbarExample" data-offset="150">
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarExample">
       <a class="navbar-brand" href="#">MyApp</a>
@@ -44,14 +75,14 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Download the App</a>
+            <a class="nav-link" href="#footer">Download the App</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -62,7 +93,7 @@
       </div>
     </nav>
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="home">
         <h1 class="display-3">My Awesome App!</h1>
         <p class="lead">This is why YOU should download this fantastic app!</p>
         <hr class="my-4">
@@ -79,12 +110,45 @@
         </form>
     </div>
 
-    <div class="container">
+    <div class="container" id="about">
 
-      <div class="row">
+      <div id="appSummary">
 
-        <h1 class="text-center">Why This App Is Awesome</h1>
-        <p class="text-center lead">Summary, once again, of your app's awesomeness</p>
+        <h1>Why This App Is Awesome</h1>
+        <p class="lead">Summary, once again, of your app's awesomeness</p>
+
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="card1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><i class="fa fa-telegram"></i> Card title</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="card1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><i class="fa fa-battery-quarter"></i> Card title</h4>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="card1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><i class="fa fa-bus"></i> Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="footer">
+
+        <h2>Download the app!</h2>
+        <p class="lead">Really, this thing is DA SHIT!</p>
+        <p><a href=""><img id="appStoreIcon" src="appstore.png"></p>
 
       </div>
 
